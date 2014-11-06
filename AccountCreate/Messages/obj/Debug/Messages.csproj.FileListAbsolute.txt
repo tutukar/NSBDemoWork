@@ -6,3 +6,12 @@ C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\NServiceBus.C
 C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\NServiceBus.Core.xml
 C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\obj\Debug\Messages.dll
 C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\obj\Debug\Messages.pdb
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\bin\Debug\Messages.dll.config
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\bin\Debug\Messages.dll
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\bin\Debug\Messages.pdb
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\bin\Debug\NServiceBus.Core.dll
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\bin\Debug\NServiceBus.Core.pdb
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\bin\Debug\NServiceBus.Core.xml
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\obj\Debug\Messages.csprojResolveAssemblyReference.cache
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\obj\Debug\Messages.dll
+C:\Users\Swayam\Documents\GitHub\NSBDemo\NSBDemo\AccountCreate\Messages\obj\Debug\Messages.pdb
