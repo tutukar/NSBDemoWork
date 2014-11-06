@@ -1,0 +1,8 @@
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\Messages.dll.config
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\Messages.dll
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\Messages.pdb
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\NServiceBus.Core.dll
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\NServiceBus.Core.pdb
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\bin\Debug\NServiceBus.Core.xml
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\obj\Debug\Messages.dll
+C:\workspace\POC\AccountCreateNsb\AccountCreate\Messages\obj\Debug\Messages.pdb

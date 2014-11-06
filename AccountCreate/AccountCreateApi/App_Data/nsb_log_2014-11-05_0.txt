@@ -1,0 +1,2062 @@
+﻿2014-11-05 14:36:06.473 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 14:36:06.530 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 14:36:06.536 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 14:36:06.540 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 14:36:06.544 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 14:36:06.549 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 14:36:06.639 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2014-11-05 14:36:06.685 INFO  NServiceBus.Features.UnicastBus Number of messages found: 4
+2014-11-05 14:36:07.063 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'WSD1008\Swayam' to group 'Performance Monitor Users' because the user is already in group.
+2014-11-05 14:36:07.082 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 14:45:37.613 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 14:45:37.666 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 14:45:37.672 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 14:45:37.677 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 14:45:37.681 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 14:45:37.686 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 14:45:37.806 WARN  NServiceBus.Licensing.LicenseManager Trial for the Particular Service Platform has expired
+2014-11-05 14:45:37.847 INFO  NServiceBus.Features.UnicastBus Number of messages found: 4
+2014-11-05 14:45:38.180 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'WSD1008\Swayam' to group 'Performance Monitor Users' because the user is already in group.
+2014-11-05 14:45:38.200 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 14:50:33.066 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 14:50:33.103 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 14:50:33.108 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 14:50:33.112 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 14:50:33.117 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 14:50:33.121 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 14:50:33.182 INFO  NServiceBus.Licensing.LicenseLocationConventions Using license in current folder (C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\License\License.xml).
+2014-11-05 14:50:33.211 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 5/22/2015 12:00:00 AM
+2014-11-05 14:50:33.252 INFO  NServiceBus.Features.UnicastBus Number of messages found: 4
+2014-11-05 14:50:33.303 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 15:12:05.681 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 15:12:05.715 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 15:12:05.720 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 15:12:05.723 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 15:12:05.727 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 15:12:05.731 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 15:12:05.800 INFO  NServiceBus.Licensing.LicenseLocationConventions Using license in current folder (C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\License\License.xml).
+2014-11-05 15:12:05.818 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 5/22/2015 12:00:00 AM
+2014-11-05 15:12:05.858 INFO  NServiceBus.Features.UnicastBus Number of messages found: 5
+2014-11-05 15:12:05.898 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 15:15:35.181 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 15:15:35.236 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 15:15:35.244 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 15:15:35.249 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 15:15:35.253 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 15:15:35.258 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 15:15:35.369 INFO  NServiceBus.Licensing.LicenseLocationConventions Using license in current folder (C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\License\License.xml).
+2014-11-05 15:15:35.411 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 5/22/2015 12:00:00 AM
+2014-11-05 15:15:35.459 INFO  NServiceBus.Features.UnicastBus Number of messages found: 5
+2014-11-05 15:15:35.755 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'WSD1008\Swayam' to group 'Performance Monitor Users' because the user is already in group.
+2014-11-05 15:15:35.778 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 15:24:02.190 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 15:24:02.233 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 15:24:02.240 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 15:24:02.244 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 15:24:02.248 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 15:24:02.252 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 15:24:02.322 INFO  NServiceBus.Licensing.LicenseLocationConventions Using license in current folder (C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\License\License.xml).
+2014-11-05 15:24:02.355 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 5/22/2015 12:00:00 AM
+2014-11-05 15:24:02.398 INFO  NServiceBus.Features.UnicastBus Number of messages found: 5
+2014-11-05 15:24:02.443 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 15:32:24.444 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 15:32:24.501 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 15:32:24.509 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 15:32:24.514 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 15:32:24.518 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 15:32:24.522 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 15:32:24.600 INFO  NServiceBus.Licensing.LicenseLocationConventions Using license in current folder (C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\License\License.xml).
+2014-11-05 15:32:24.634 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 5/22/2015 12:00:00 AM
+2014-11-05 15:32:24.677 INFO  NServiceBus.Features.UnicastBus Number of messages found: 5
+2014-11-05 15:32:25.011 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'WSD1008\Swayam' to group 'Performance Monitor Users' because the user is already in group.
+2014-11-05 15:32:25.034 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 15:37:04.194 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 15:37:04.244 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 15:37:04.250 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 15:37:04.255 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 15:37:04.259 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 15:37:04.263 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 15:37:04.397 INFO  NServiceBus.Licensing.LicenseLocationConventions Using license in current folder (C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\License\License.xml).
+2014-11-05 15:37:04.438 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 5/22/2015 12:00:00 AM
+2014-11-05 15:37:04.484 INFO  NServiceBus.Features.UnicastBus Number of messages found: 5
+2014-11-05 15:37:04.841 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'WSD1008\Swayam' to group 'Performance Monitor Users' because the user is already in group.
+2014-11-05 15:37:04.873 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
+2014-11-05 15:46:40.335 INFO  DefaultFactory Logging to 'C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\App_Data\' with level Info
+2014-11-05 15:46:40.400 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Sagas' storage.
+2014-11-05 15:46:40.407 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Timeouts' storage.
+2014-11-05 15:46:40.411 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Subscriptions' storage.
+2014-11-05 15:46:40.416 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'Outbox' storage.
+2014-11-05 15:46:40.421 INFO  NServiceBus.Persistence.PersistenceStartup Activating persistence 'InMemoryPersistence' to provide storage for 'GatewayDeduplication' storage.
+2014-11-05 15:46:40.549 INFO  NServiceBus.Licensing.LicenseLocationConventions Using license in current folder (C:\workspace\POC\AccountCreateNsb\AccountCreate\AccountCreateApi\License\License.xml).
+2014-11-05 15:46:40.596 INFO  NServiceBus.Licensing.LicenseManager UpgradeProtectionExpiration: 5/22/2015 12:00:00 AM
+2014-11-05 15:46:40.654 INFO  NServiceBus.Features.UnicastBus Number of messages found: 5
+2014-11-05 15:46:40.979 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'WSD1008\Swayam' to group 'Performance Monitor Users' because the user is already in group.
+2014-11-05 15:46:41.003 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Encryptor
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ForwarderFaultManager
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: InMemoryFaultManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: AutoSubscribe
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwardReceivedMessages
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: RegisterHandlersInOrder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: [MessageDrivenSubscriptions]
+Startup Tasks: None
+
+Name: InMemoryTimeoutPersistence
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.0.1
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManagerBasedDeferral]
+
+Name: Sagas
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: SecondLevelRetries
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBus
+Version: 5.0.1
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: StorageDrivenPublishing
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.0.1
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+
