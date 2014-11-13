@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountCreateApi", "AccountCreateApi\AccountCreateApi.csproj", "{1F1FC968-892C-4D20-B087-4D79CBF58E02}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountCreateSubscriber", "AccountCreateSubscriber\AccountCreateSubscriber.csproj", "{E6D40640-AF92-4AF0-8C62-DEC0507EA0FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyAccountSaga", "LoyaltyAccountSaga\LoyaltyAccountSaga.csproj", "{AE24BC94-D937-4158-9E9E-7946DDFEA8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{61ECA06F-F417-43C0-A500-AB3D678F3B6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AE24BC94-D937-4158-9E9E-7946DDFEA8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE24BC94-D937-4158-9E9E-7946DDFEA8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE24BC94-D937-4158-9E9E-7946DDFEA8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61ECA06F-F417-43C0-A500-AB3D678F3B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61ECA06F-F417-43C0-A500-AB3D678F3B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61ECA06F-F417-43C0-A500-AB3D678F3B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61ECA06F-F417-43C0-A500-AB3D678F3B6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

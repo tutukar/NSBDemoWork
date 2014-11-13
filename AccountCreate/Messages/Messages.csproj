@@ -50,6 +50,8 @@
     <Compile Include="AccountCreated.cs" />
     <Compile Include="ConfirmAccount.cs" />
     <Compile Include="CreateAccount.cs" />
+    <Compile Include="LoyaltyAccountResponse.cs" />
+    <Compile Include="LoyaltyAccountRequest.cs" />
     <Compile Include="LoyaltyAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
