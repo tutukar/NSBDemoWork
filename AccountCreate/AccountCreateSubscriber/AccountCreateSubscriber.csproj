@@ -59,7 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoyaltyAccountResponseHandler.cs" />
     <Compile Include="AccountCreatedEventHandler.cs" />
     <Compile Include="EndpointConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,10 +73,6 @@
     <ProjectReference Include="..\Messages\Messages.csproj">
       <Project>{a9bc7fc9-dabc-47a3-9192-55975f687cfb}</Project>
       <Name>Messages</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Utilities\Utilities.csproj">
-      <Project>{61eca06f-f417-43c0-a500-ab3d678f3b6a}</Project>
-      <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
